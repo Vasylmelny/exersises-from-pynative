@@ -17,7 +17,6 @@ if age<=20:
 elif age<60:
 	print("Hello, middle-aged pupil!")
 else:
-	print("Diembel'!")
     print("Diembel v maju, vsio po kuju!")
 
 #Вправа 3: Підрахунок парних і непарних чисел
