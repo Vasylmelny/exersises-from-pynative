@@ -1,33 +1,102 @@
-# Вправа 1: Лічильник від 1 до 10
-#
-# Завдання:
-# Виведи числа від 1 до 10 за допомогою циклу while .
+import random
+from traceback import print_tb
 
-i=0
-while i < 10:
-    i+=1
+
+print(random.randint(1, 10))
+
+arr = [1, 5, 2]
+
+arr.sort()
+
+print(arr)
+
+for i in range(2, 11):
     print(i)
 
-# Вправа 2: Пароль користувача
-#
-# Завдання:
-# Попроси користувача ввести пароль.
-# Поки він не введе "python123", програма повинна повторювати запит.
+c = 0
+while c == 10:
+    c += 1
 
-passwd=input("Enter your password: ")
-while passwd != "python123":
-    passwd=input("Enter your password: ")
+c = 0
+while True:
+    if c == 0:
+        break
 
-# Вправа 3: Сума чисел, поки не 0
-#
-# Завдання:
-# Користувач вводить числа. Програма підсумовує їх, поки не введено 0.
-# Коли користувач вводить 0, програма показує загальну суму.
+def getRandom(a=10, b=15):
+    print(random.randint(a, b))
 
-summ=0
-n=int(input("Enter your number: "))
-while n != 0:
-    summ+=n
-    n=int(input("Enter your number: "))
+getRandom(100, 200)
 
-print(summ)
+def joinName():
+    a = 100
+    print(a)
+
+joinName()
+
+def add(a=1, b=1):
+    return a + b
+
+suma = add(1, 2)
+
+print(suma)
+
+t1()
+
+def t1():
+    print("hello world")
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def isEven(a = []):
+    for i in a:
+        if i % 2 == 0:
+            return True
+        else:
+            return False
+
+print(isEven(arr))
+print(isEven(arr))
+
+count = 0
+
+def getCounter():
+    global count
+    count = count + 1
+
+getCounter()
+
+print(count)
+
+def add():
+    return 1000
+
+print(add())
+
+def factorial(a):
+    res = 1
+    for i in range(1, a + 1):
+        res *= i
+    return res
+
+r = factorial(100)
+print(r)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(3))
+
+def test(t):
+    print(t)
+
+test('1000')
+
+def suma(arr = []):
+    s = 0
+    for i in arr:
+        s += i
+    return s
+
+print(suma([4, 3]))
