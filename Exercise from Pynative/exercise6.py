@@ -1,14 +1,12 @@
-# Write a code to return True if the list’s first and last
-# numbers are the same. If the numbers are different, return False.
+# Write a Python code to display numbers from a list divisible by 5
 
-arr1 = [1,2,3,4,5]
-arr2 = [4,5,6,4]
+list1 = [2, 3 , 45, 60, 199, 100, 0, 67]
 
-def first_last_same(arr):
-    print("Given list:", arr)
-    print("First element:", arr[0])
-    print("Last element:", arr[-1])
-    return arr[0] == arr[-1]
+def div5(list):
+    lst = []
+    for num in list:
+        if num % 5 == 0:
+            lst.append(num)
+    return lst
 
-print(first_last_same(arr1))
-print(first_last_same(arr2))
+print(div5(list1))
